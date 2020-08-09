@@ -1,0 +1,24 @@
+<div>
+    <h3>Find Product by Category</h3>
+
+    <td><input type="text" [(ngModel)]="productCategory" placeholder="Product Category"></td>
+    <br />
+    <button (click)="findByProductCategory()">Find Product</button>
+    <br />
+    <br />
+    <br />
+    <h4>Product Details</h4>
+    <table>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Image</th>
+        <th>Product Category</th>
+        <th>Product Price</th>
+        <tr *ngFor="let product of products">
+            <td>{{product.productId}}</td>
+            <td>{{product.productName| titlecase}}</td>
+            <td class="img-hover-zoom"><img class="images" src="{{product.productImage}}" alt="Card image cap"></td>
+            <td>{{product.productCategory | titlecase}}</td>
+            <td>{{product.productPrice| currency:'INR'}}</td>
+        </tr>
+    </table> 

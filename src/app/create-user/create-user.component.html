@@ -1,0 +1,30 @@
+<div>
+    <h4>Create User</h4>
+    <table>
+        <tr>
+            <td><input type="text" [(ngModel)]="user.userName" placeholder="Full Name"></td>
+        </tr>
+        <br />
+        <tr>
+            <td><input type="text" [(ngModel)]="user.email" placeholder="email address"></td>
+        </tr>
+        <br />
+        <tr>
+            <td><input type="text" [(ngModel)]="user.password" placeholder=" password"></td>
+        </tr>
+        <br />
+        <tr>
+            <td><input type="text" [(ngModel)]="user.phoneNumber" placeholder=" phone Number"></td>
+        </tr>
+        <br />
+        <tr>
+            <td><input type="text" [(ngModel)]="user.address" placeholder="address"></td>
+        </tr>
+        <br />
+        <tr>
+            <td><input type="text" [(ngModel)]="user.userType" placeholder="user Type"></td>
+        </tr>
+        <br />
+    </table>
+    <button (click)="createUser()">Create</button>
+</div>

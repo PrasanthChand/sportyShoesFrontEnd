@@ -1,0 +1,21 @@
+<div>
+    <h4>Users List</h4>
+    <table>
+        <th>userId</th>
+        <th>userName</th>
+        <th>email</th>
+        <th>password</th>
+        <th>phoneNumber</th>
+        <th>address</th>
+        <th>userType</th>
+        <tr *ngFor="let User of users">
+            <td>{{User.userId}}</td>
+            <td>{{User.userName| titlecase}}</td>
+            <td>{{User.email}}</td>
+            <td>{{User.password}}</td>
+            <td>{{User.phoneNumber}}</td>
+            <td>{{User.address}}</td>
+            <td>{{User.userType| titlecase}}</td>
+        </tr>
+    </table>
+</div>

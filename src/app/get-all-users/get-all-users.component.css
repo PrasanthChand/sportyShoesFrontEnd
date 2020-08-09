@@ -1,0 +1,8 @@
+h3 {
+    text-decoration-color: black;
+  }
+  
+  table, tr, th, td {
+    border: black solid 1px;
+    text-align: center;
+  }

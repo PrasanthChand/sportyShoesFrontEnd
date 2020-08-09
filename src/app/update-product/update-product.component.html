@@ -1,0 +1,48 @@
+<div>
+    <h3>Update Product</h3>
+    <form #Product="ngForm" (ngSubmit)="updateProduct()">
+    <table>
+        <tr>
+            <td><input type="number" [(ngModel)]="product.productId" [ngModelOptions]="{standalone: true}" placeholder="Product Id"></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="product.productName" [ngModelOptions]="{standalone: true}" placeholder="Product Name"></td>
+        </tr>
+        <br />
+        <tr>
+            <td><input type="url"  [(ngModel)]="product.productImage" [ngModelOptions]="{standalone: true}" placeholder="Image"></td>
+        </tr>
+        <br />
+        <tr>
+            <td><input type="text" [(ngModel)]="product.productCategory" [ngModelOptions]="{standalone: true}" placeholder=" Product Category"></td>
+        </tr>
+        <br />
+        <tr>
+            <td><input type="text" [(ngModel)]="product.productPrice" [ngModelOptions]="{standalone: true}" placeholder=" Product Price"></td>
+        </tr>
+        <br />
+    </table>
+    <button type="submit">Update Product</button>
+    </form>
+    <br />
+    
+    <table>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Image</th>
+        <th>Product Category</th>
+        <th>Product Price</th>
+        <tr *ngFor="let Product of products">
+            <td>{{Product.productId}}</td>
+            <td>{{Product.productName | titlecase}}</td>
+            <td class="img-hover-zoom"><img class="images" src="{{Product.productImage}}"/></td>
+            <td>{{Product.productCategory | titlecase}}</td>
+            <td>{{Product.productPrice| currency:'INR'}}</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+  
+</div>

@@ -1,0 +1,38 @@
+<div>
+    <h5>Remove Product by ID</h5>
+    <input type="number" [(ngModel)]="productId" placeholder="Product Id"> <button (click)="deleteByProductId()"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/></svg></button>
+    <br />
+    <br />
+    <h5>Products List</h5>
+    <table>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Image</th>
+        <th>Product Category</th>
+        <th>Product Price</th>
+        <tr *ngFor="let Product of products">
+            <td>{{Product.productId}}</td>
+            <td>{{Product.productName | titlecase}}</td>
+            <td class="img-hover-zoom"><img class="images" src="{{Product.productImage}}"/></td>
+            <td>{{Product.productCategory | titlecase}}</td>
+            <td>{{Product.productPrice| currency:'INR'}}</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+
+</div>
+<!-- <div class="row">
+<div *ngFor="let Product of products" class="card" style="width: 14rem;">
+    <img class="card-img-top" src="{{Product.productImage}}" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-text">{{Product.productName}}</h6>
+      <h6 class="card-text">Id: {{Product.productId}}</h6>
+      <h6 class="card-text">Category: {{Product.productCategory}}</h6>
+      <h6 class="card-text">Price: {{Product.productPrice}}</h6>
+      <a href="deleteByProductId()" class="btn btn-primary"><svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+    </svg> Delete</a>
+    </div>
+</div>
+</div> -->

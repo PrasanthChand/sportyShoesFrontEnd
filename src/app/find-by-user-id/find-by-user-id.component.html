@@ -1,0 +1,29 @@
+<div>
+    <h3>Find User by Id</h3>
+
+    <td><input type="number" [(ngModel)]="userId" placeholder="User Id"></td>
+    <br />
+    <button (click)="findByUserId()">Find User</button>
+    <br />
+    <br />
+    <br />
+    <h4>User Details</h4>
+    <table>
+        <th>userId</th>
+        <th>userName</th>
+        <th>email</th>
+        <th>password</th>
+        <th>phoneNumber</th>
+        <th>address</th>
+        <th>userType</th>
+        <tr>
+            <td>{{user.userId}}</td>
+            <td>{{user.userName}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.phoneNumber}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.userType}}</td>
+        </tr>
+    </table>
+</div>

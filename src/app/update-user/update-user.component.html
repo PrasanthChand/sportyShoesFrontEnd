@@ -1,0 +1,36 @@
+<div>
+    <h3>Update User</h3>
+    <table>
+    <tr><td><input type="number" [(ngModel)]="user.userId" placeholder="User Id"></td></tr>
+    <tr><td><input type="text" [(ngModel)]="user.userName" placeholder="Name"></td></tr>
+    <tr><td><input type="email" [(ngModel)]="user.email" placeholder="e-mail address"></td></tr>
+    <tr><td><input type="password" [(ngModel)]="user.password" placeholder="password"></td></tr>
+    <tr><td><input type="tel" [(ngModel)]="user.phoneNumber" placeholder="Phone Number"></td></tr>
+    <tr><td><input type="text" [(ngModel)]="user.address" placeholder="Address"></td></tr>
+    <tr><td><input type="text" [(ngModel)]="user.userType" placeholder="User Type"></td></tr>
+    </table>
+    <button type="submit" (click)="updateUser()">Update User</button>
+    <table>
+        <th>userId</th>
+        <th>userName</th>
+        <th>email</th>
+        <th>password</th>
+        <th>phoneNumber</th>
+        <th>address</th>
+        <th>userType</th>
+        <tr *ngFor="let User of users">
+            <td>{{User.userId}}</td>
+            <td>{{User.userName}}</td>
+            <td>{{User.email}}</td>
+            <td>{{User.password}}</td>
+            <td>{{User.phoneNumber}}</td>
+            <td>{{User.address}}</td>
+            <td>{{User.userType}}</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+   
+</div>

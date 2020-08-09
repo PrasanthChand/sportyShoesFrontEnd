@@ -1,0 +1,22 @@
+<div>
+    <h4>Create Product</h4>
+    <table>
+        <tr>
+            <td><input type="text" [(ngModel)]="product.productName" placeholder="Product Name"></td>
+        </tr>
+        <br />
+        <tr>
+            <td><input type="text" [(ngModel)]="product.productImage" placeholder="Image"></td>
+        </tr>
+        <br />
+        <tr>
+            <td><input type="text" [(ngModel)]="product.productCategory" placeholder=" Product Category"></td>
+        </tr>
+        <br />
+        <tr>
+            <td><input type="text" [(ngModel)]="product.productPrice" placeholder=" Product Price"></td>
+        </tr>
+        <br />
+    </table>
+    <button (click)="createProduct()">Create Product</button>
+</div>
