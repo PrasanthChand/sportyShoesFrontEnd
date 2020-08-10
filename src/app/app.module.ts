@@ -17,6 +17,8 @@ import { DeleteByProductIdComponent } from './delete-by-product-id/delete-by-pro
 import { FindByProductIdComponent } from './find-by-product-id/find-by-product-id.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { FindByProductCategoryComponent } from './find-by-product-category/find-by-product-category.component';
+import { CartComponent } from './cart/cart.component';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { FindByProductCategoryComponent } from './find-by-product-category/find-
     DeleteByProductIdComponent,
     FindByProductIdComponent,
     UpdateProductComponent,
-    FindByProductCategoryComponent
+    FindByProductCategoryComponent,
+    CartComponent
+ 
   ],
   imports: [
     BrowserModule,

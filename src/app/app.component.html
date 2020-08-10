@@ -1,42 +1,254 @@
-<div class="jumbotron jumbotron-fluid container-fluid bg">
-  <ul>
-    <li>
-      <div class="dropdown">
-        <button type="button" class="btn btn-primary">User</button>
-        <div class="dropdown-content">
-          <br />
-          <a href="/createUser"> Create User</a>
-          <a href="/findByUserId"> Fetch User</a>
-          <a href="/getAllUsers"> Fetch Users List</a>
-          <a href="/updateUser"> Update User</a>
-          <a href="/deleteByUserId"> Delete User</a>
-        </div>
-      </div>
-    </li>
-  </ul>
-  <ul>
-    <li>
-      <div class="dropdown">
-        <button type="button" class="btn btn-primary">Product</button>
-        <div class="dropdown-content">
-          <br />
-          <a href="/createProduct"> Create Product</a>
-          <a href="/findByProductId"> Fetch Product By Id</a>
-          <a href="/findByProductCategory"> Fetch Product By Category</a>
-          <a href="/getAllProducts"> Fetch Products List</a>
-          <a href="/updateProduct"> Update Product</a>
-          <a href="/deleteByProductId"> Delete Product</a>
-        </div>
-      </div>
-    </li>
-  </ul>
+<nav class="navbar navbar-expand-sm sticky-top" style="background-color: #e93819d8;">
+  <nav class="navbar navbar-dark bg-dark">
+       <img src=".\assets\images\SportyShoesLogonew.JPG" width="5" height="5" alt="">
+  </nav>
 
-<div align="center">
-  <router-outlet></router-outlet>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="btn btn-primary" style="background-color: #042d4b;" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary" style="background-color: #042d4b;">Product</button>
+          <div class="dropdown-content">
+            <br />
+            <a href="/createProduct"> Create Product</a>
+            <a href="/findByProductId"> Fetch Product By Id</a>
+            <a href="/findByProductCategory"> Fetch Product By Category</a>
+            <a href="/getAllProducts"> Fetch Products List</a>
+            <a href="/updateProduct"> Update Product</a>
+            <a href="/deleteByProductId"> Delete Product</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary" style="background-color: #042d4b;">User</button>
+          <div class="dropdown-content">
+            <br />
+            <a href="/createUser"> Create User</a>
+            <a href="/findByUserId"> Fetch User</a>
+            <a href="/getAllUsers"> Fetch Users List</a>
+            <a href="/updateUser"> Update User</a>
+            <a href="/deleteByUserId"> Delete User</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <a routerLink="/cart" class="btn btn-primary my-2 my-sm-0"style="background-color: #042d4b;">Checkout</a>
+  </div>
+</nav>
+<div align="center" class="bg">
+  <router-outlet>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+   </router-outlet>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
 </div>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</div>
+
+
+
+
+
+
+
+
+<!-- <div><img style="display: inline;" src=".\assets\images\SportyShoesLogonew.JPG" alt="Sporty Shoes Logo" class="fixed-top"> </div>
+<div class="jumbotron jumbotron-fluid container-fluid bg">
+  <div class="jumbotron jumbotron-fluid container-fluid bg">
+    <div class="jumbotron jumbotron-fluid container-fluid bg">
+      <body class="bg">
+        <div class="heading">
+          <h1 class="fixed-top " style="color: black; background-color:transparent;">Sporty Shoes</h1>
+        </div>
+          <ul>
+            <li>
+            <div class="dropdown">
+              <button type="button" class="btn btn-primary">User</button>
+              <div class="dropdown-content">
+                <br />
+                <a href="/createUser"> Create User</a>
+                <a href="/findByUserId"> Fetch User</a>
+                <a href="/getAllUsers"> Fetch Users List</a>
+                <a href="/updateUser"> Update User</a>
+                <a href="/deleteByUserId"> Delete User</a>
+              </div>
+            </div>
+          </li>
+           <li>
+            <div class="dropdown">
+              <button type="button" class="btn btn-primary">Product</button>
+              <div class="dropdown-content">
+                <br />
+                <a href="/createProduct"> Create Product</a>
+                <a href="/findByProductId"> Fetch Product By Id</a>
+                <a href="/findByProductCategory"> Fetch Product By Category</a>
+                <a href="/getAllProducts"> Fetch Products List</a>
+                <a href="/updateProduct"> Update Product</a>
+                <a href="/deleteByProductId"> Delete Product</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div align="center">
+          <router-outlet></router-outlet>
+        </div>
+      </body>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="jumbotron jumbotron-fluid container-fluid bg">
+  <div class="jumbotron jumbotron-fluid container-fluid bg">
+    <div class="jumbotron jumbotron-fluid container-fluid bg">
+
+      <body class="bg">
+        <div class="heading">
+          <h1 class="fixed-top " style="color: black; background-color:transparent;">Sporty Shoe</h1>
+        </div>
+        <ul>
+          <li>
+            <div class="dropdown">
+              <button type="button" class="btn btn-primary">User</button>
+              <div class="dropdown-content">
+                <br />
+                <a href="/createUser"> Create User</a>
+                <a href="/findByUserId"> Fetch User</a>
+                <a href="/getAllUsers"> Fetch Users List</a>
+                <a href="/updateUser"> Update User</a>
+                <a href="/deleteByUserId"> Delete User</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button type="button" class="btn btn-primary">Product</button>
+              <div class="dropdown-content">
+                <br />
+                <a href="/createProduct"> Create Product</a>
+                <a href="/findByProductId"> Fetch Product By Id</a>
+                <a href="/findByProductCategory"> Fetch Product By Category</a>
+                <a href="/getAllProducts"> Fetch Products List</a>
+                <a href="/updateProduct"> Update Product</a>
+                <a href="/deleteByProductId"> Delete Product</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div align="center">
+          <router-outlet></router-outlet>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </body>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

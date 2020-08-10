@@ -85,6 +85,7 @@ table, tr, td, th {
 .dropdown-content {
   display: none;
   position: absolute;
+  font-weight: bold;
   /* background-color: gray; */
   min-width: 160px;
   /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
@@ -94,7 +95,7 @@ table, tr, td, th {
 /* Links inside the dropdown */
 
 .dropdown-content a {
-  color: black;
+  color: rgb(0, 0, 0);
   padding: 5px 5px;
   text-decoration: none;
   display: block;
@@ -103,7 +104,7 @@ table, tr, td, th {
 /* Change color of dropdown links on hover */
 
 .dropdown-content a:hover {
-  background-color: rgb(74, 193, 223);
+  background-color:yellow;
 }
 
 /* Show the dropdown menu on hover */
@@ -116,4 +117,9 @@ table, tr, td, th {
 
 .dropdown:hover .dropbtn {
   background-color: #bd5a9c;
+}
+
+/*to position my checkout button*/
+.myCheckOutButton {
+float: right;
 }

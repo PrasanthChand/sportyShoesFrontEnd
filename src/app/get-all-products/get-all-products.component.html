@@ -1,4 +1,6 @@
-<h5>Products List</h5>
+<h4>Products List</h4>
+<br />
+<br />
 <!-- <table>
         <th>Product Id</th>
         <th>Product Name</th>
@@ -13,18 +15,15 @@
             <td>{{Product.productPrice| currency:'INR'}}</td>
         </tr>
     </table>  -->
-<br />
-<br />
-<br />
-<br />
 <div class="row">
-    <div *ngFor="let Product of products" class="card" style="width: 14rem">
-        <td class="img-hover-zoom"><img class="card-img-top img-hover-zoom" src="{{Product.productImage}}" alt="Card image cap"></td>
+    <div *ngFor="let product of products" class="card" style="width: 14rem">
+        <td class="img-hover-zoom"><img class="card-img-top img-hover-zoom" src="{{product.productImage}}" alt="Card image cap"></td>
         <div class="card-body">
-            <h5 class="card-text">{{Product.productName | titlecase }}</h5>
-            <h6 class="card-text">Id: {{Product.productId}}</h6>
-            <h6 class="card-text">Category: {{Product.productCategory | titlecase}}</h6>
-            <h6 class="card-text">Price: {{Product.productPrice | currency:'INR'}}</h6>
+            <h5 class="card-text">{{product.productName | titlecase }}</h5>
+            <h6 class="card-text">Id: {{product.productId}}</h6>
+            <h6 class="card-text">Category: {{product.productCategory | titlecase}}</h6>
+            <h6 class="card-text">Price: {{product.productPrice | currency:'INR'}}</h6>
+            <button class="btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
         </div>
     </div>
 </div>

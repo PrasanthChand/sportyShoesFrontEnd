@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../product';
 import { ProductService } from '../product.service';
+import { ActivatedRoute } from '@angular/router';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-get-all-products',
@@ -8,14 +10,19 @@ import { ProductService } from '../product.service';
   styleUrls: ['../app.component.css']
 })
 export class GetAllProductsComponent implements OnInit {
-
+  public product: Product;
   public products: Product[];
-  constructor(private service: ProductService) { }
+  constructor(private service: ProductService, private cartService: CartService,private route: ActivatedRoute) { }
 
-  ngOnInit() {
-    this.service.getAllProducts().subscribe(res=>{
-      this.products=res;
-    });
+
+  addToCart(product) {
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to the cart!');
   }
 
+  ngOnInit() {
+    this.service.getAllProducts().subscribe(res => {
+      this.products = res;
+    });
+  }
 }

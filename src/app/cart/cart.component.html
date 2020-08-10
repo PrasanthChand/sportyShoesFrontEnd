@@ -1,0 +1,15 @@
+<h3>Products in your Cart</h3>
+<table>
+    <th>Product Id</th>
+    <th>Product Name</th>
+    <th>Product Image</th>
+    <th>Product Category</th>
+    <th>Product Price</th>
+    <tr *ngFor="let item of items">
+        <td>{{item.productId}}</td>
+        <td>{{item.productName | titlecase}}</td>
+        <td class="img-hover-zoom"><img class="images" src="{{item.productImage}}"/></td>
+        <td>{{item.productCategory | titlecase}}</td>
+        <td>{{item.productPrice| currency:'INR'}}</td>
+    </tr>
+</table> 

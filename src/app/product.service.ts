@@ -36,4 +36,8 @@ export class ProductService {
   public updateProduct(product: Product) {
     return this.http.put<Product>(this.url, product);
   }
+
+  public productCart(product: Product) {
+    return this.http.put<Product>(this.url, product);
+  }
 }

@@ -11,7 +11,7 @@ import { FindByProductCategoryComponent } from './find-by-product-category/find-
 import { GetAllProductsComponent } from './get-all-products/get-all-products.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { FindByProductIdComponent } from './find-by-product-id/find-by-product-id.component';
-
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {path:"createUser", component:CreateUserComponent},
@@ -24,7 +24,9 @@ const routes: Routes = [
   {path:"findByProductId", component: FindByProductIdComponent},
   {path:"findByProductCategory", component:FindByProductCategoryComponent},
   {path:"getAllProducts", component: GetAllProductsComponent},
-  {path:"updateProduct", component:UpdateProductComponent}
+  {path:"updateProduct", component:UpdateProductComponent},
+  {path:"cart", component:CartComponent}
+
 ];
 
 @NgModule({
