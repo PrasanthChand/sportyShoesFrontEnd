@@ -58,8 +58,8 @@ table, tr, td, th {
 }
 
 .bg {
-  /* background: linear-gradient(45deg, #b9b779 0%, #8fc096 25%, #97ccd3 50%, #bfaceb 75%, #f0c0f7 100%); */
-  background: linear-gradient(0deg, #b5f1ee 0%, #d1ebbc 50%, #fad7f7 100%);
+  background: linear-gradient(45deg, #b9b779 0%, #8fc096 25%, #97ccd3 50%, #bfaceb 75%, #f0c0f7 100%);
+  /* background: linear-gradient(0deg, #b5f1ee 0%, #d1ebbc 50%, #fad7f7 100%); */
 }
 
 .bg1 {

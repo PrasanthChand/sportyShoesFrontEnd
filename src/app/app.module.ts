@@ -18,6 +18,10 @@ import { FindByProductIdComponent } from './find-by-product-id/find-by-product-i
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { FindByProductCategoryComponent } from './find-by-product-category/find-by-product-category.component';
 import { CartComponent } from './cart/cart.component';
+import { CreatePurchaseComponent } from './create-purchase/create-purchase.component';
+import { GetAllPurchasesComponent } from './get-all-purchases/get-all-purchases.component';
+import { FindByPurchaseIdComponent } from './find-by-purchase-id/find-by-purchase-id.component';
+import { FindByPurchaseDateComponent } from './find-by-purchase-date/find-by-purchase-date.component';
 
 
 @NgModule({
@@ -34,7 +38,11 @@ import { CartComponent } from './cart/cart.component';
     FindByProductIdComponent,
     UpdateProductComponent,
     FindByProductCategoryComponent,
-    CartComponent
+    CartComponent,
+    CreatePurchaseComponent,
+    GetAllPurchasesComponent,
+    FindByPurchaseIdComponent,
+    FindByPurchaseDateComponent
  
   ],
   imports: [

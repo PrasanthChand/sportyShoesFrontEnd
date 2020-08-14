@@ -6,10 +6,27 @@
     <th>Product Category</th>
     <th>Product Price</th>
     <tr *ngFor="let item of items">
-        <td>{{item.productId}}</td>
+        <td >{{item.productId}}</td>
         <td>{{item.productName | titlecase}}</td>
-        <td class="img-hover-zoom"><img class="images" src="{{item.productImage}}"/></td>
+        <td class="img-hover-zoom"><img class="images" src="{{item.productImage}}" /></td>
         <td>{{item.productCategory | titlecase}}</td>
         <td>{{item.productPrice| currency:'INR'}}</td>
     </tr>
-</table> 
+</table>
+<br />
+<br />
+
+<h4>Please confirm your purchase</h4>
+<table>
+    <th>Product Id</th>
+    <th>Product Name</th>
+    <th>Product Category</th>
+    <th>Product Price</th>
+    <tr *ngFor="let item of items">
+        <td><input type="number" [(ngModel)]="item.productId" ></td>
+        <td><input type="text" [(ngModel)]="item.productName"></td>
+        <td><input type="text" [(ngModel)]="item.productCategory"></td>
+        <td><input type="number" [(ngModel)]="item.productPrice"></td>
+    </tr>
+</table>
+<button class="btn btn-primary" style="width: 13rem" (click)="createPurchase()">Buy now</button>

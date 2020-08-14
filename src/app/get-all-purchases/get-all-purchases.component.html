@@ -1,0 +1,23 @@
+<div>
+        <h3>Purchase List</h3>
+</div>
+<table>
+    <th>Purchase Id</th>
+    <th>Purchase Date</th>
+    <th>User Id</th>
+    <th>User Name</th>
+    <th>Product Id</th>
+    <th>Product Name</th>
+    <th>Product Price</th>
+    <th>Product Category</th>
+     <tr *ngFor="let Purchases of purchases">
+        <td>{{Purchases.purchaseId}}</td>
+        <td>{{Purchases.purchaseDate | date:'medium' }}</td>
+        <td *ngFor="let Users of Purchases.users">{{Users.userId}}</td>
+        <td *ngFor="let Users of Purchases.users">{{Users.userName}}</td>
+        <td *ngFor="let Products of Purchases.products">{{Products.productId}}</td>
+        <td *ngFor="let Products of Purchases.products">{{Products.productName}}</td>
+        <td *ngFor="let Products of Purchases.products">{{Products.productPrice | currency:'INR'}}</td>
+        <td *ngFor="let Products of Purchases.products">{{Products.productCategory}}</td>
+     </tr>
+</table>

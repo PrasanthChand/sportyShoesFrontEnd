@@ -12,6 +12,11 @@ import { GetAllProductsComponent } from './get-all-products/get-all-products.com
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { FindByProductIdComponent } from './find-by-product-id/find-by-product-id.component';
 import { CartComponent } from './cart/cart.component';
+import { CreatePurchaseComponent } from './create-purchase/create-purchase.component';
+import { GetAllPurchasesComponent } from './get-all-purchases/get-all-purchases.component';
+import { FindByPurchaseIdComponent } from './find-by-purchase-id/find-by-purchase-id.component';
+import { FindByPurchaseDateComponent } from './find-by-purchase-date/find-by-purchase-date.component';
+
 
 const routes: Routes = [
   {path:"createUser", component:CreateUserComponent},
@@ -25,8 +30,11 @@ const routes: Routes = [
   {path:"findByProductCategory", component:FindByProductCategoryComponent},
   {path:"getAllProducts", component: GetAllProductsComponent},
   {path:"updateProduct", component:UpdateProductComponent},
-  {path:"cart", component:CartComponent}
-
+  {path:"cart", component:CartComponent},
+  {path:"createPurchase", component:CreatePurchaseComponent},
+  {path:"getAllPurchases", component:GetAllPurchasesComponent},
+  {path:"findByPurchaseId",component:FindByPurchaseIdComponent},
+  {path:"findByPurchaseDate", component:FindByPurchaseDateComponent}
 ];
 
 @NgModule({
